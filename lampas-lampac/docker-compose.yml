@@ -11,5 +11,5 @@ services:
     stop_grace_period: "1m"
     init: true
     volumes:
-      - ./${APP_DATA_DIR}/data/init.conf:/home/init.conf
-      - ./${APP_DATA_DIR}/data/personal.lampa:/home/wwwroot/lampa-main/personal.lampa:ro
+      - ./${APP_DATA_DIR}/data/config.json:/home/init.conf
+      - ./${APP_DATA_DIR}/data/personal.json:/home/wwwroot/lampa-main/personal.lampa:ro
