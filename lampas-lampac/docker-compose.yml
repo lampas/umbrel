@@ -1,12 +1,9 @@
-version: "3.7"
-
 services:
-
   app_proxy:
     environment:
-      APP_HOST: lampac_server_1
+      APP_HOST: lampas-lampac_server_1
       APP_PORT: 9118
-    
+
   server:
     image: immisterio/lampac:latest
     user: "1000:1000"
