@@ -24,4 +24,4 @@ releaseNotes: >-
 dependencies: []
 path: ""
 defaultUsername: ""
-defaultPassword: ""
+deterministicPassword: true

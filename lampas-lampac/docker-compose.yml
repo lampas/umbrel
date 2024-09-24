@@ -12,4 +12,10 @@ services:
     init: true
     volumes:
       - ${APP_DATA_DIR}/data/config.json:/home/init.conf
+      - ${APP_DATA_DIR}/data/passwd:/home/passwd
       - ${APP_DATA_DIR}/data/personal.json:/home/wwwroot/lampa-main/personal.lampa:ro
+      - ${APP_DATA_DIR}/data/entrypoint.sh:/umbrel-entrypoint.sh:ro
+    entrypoint: /umbrel-entrypoint.sh
+    environment:
+        # App config
+        APP_PASSWORD: $APP_PASSWORD
