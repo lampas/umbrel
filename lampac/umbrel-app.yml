@@ -2,7 +2,7 @@ manifestVersion: 1
 id: lampas-lampac
 name: Lampac
 tagline: A pre-configured version of Lampa (catalog of films and series)
-icon: https://github.com/lampas/umbrel/blob/main/lampac/assets/icon.svg
+icon: https://github.com/lampas/umbrel/blob/main/lampac/assets/icon.svg?raw=true
 category: Media
 version: "0.0.1"
 port: 9118
@@ -15,10 +15,10 @@ submission: https://github.com/lampas/umbrel
 repo: https://github.com/immisterio/Lampac
 support: https://github.com/immisterio/Lampac/issues
 gallery:
-  - https://github.com/lampas/umbrel/blob/main/lampac/assets/screenshot-1.png
-  - https://github.com/lampas/umbrel/blob/main/lampac/assets/screenshot-2.png
-  - https://github.com/lampas/umbrel/blob/main/lampac/assets/screenshot-3.png
-  - https://github.com/lampas/umbrel/blob/main/lampac/assets/screenshot-4.png
+  - https://github.com/lampas/umbrel/blob/main/lampac/assets/screenshot-1.png?raw=true
+  - https://github.com/lampas/umbrel/blob/main/lampac/assets/screenshot-2.png?raw=true
+  - https://github.com/lampas/umbrel/blob/main/lampac/assets/screenshot-3.png?raw=true
+  - https://github.com/lampas/umbrel/blob/main/lampac/assets/screenshot-4.png?raw=true
 releaseNotes: >-
   First release
 dependencies: []
