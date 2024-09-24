@@ -4,7 +4,7 @@ name: Lampac
 tagline: A pre-configured version of Lampa (catalog of films and series)
 icon: https://github.com/lampas/umbrel/blob/main/lampas-lampac/assets/icon.svg?raw=true
 category: Media
-version: "0.0.3"
+version: "0.0.4"
 port: 9118
 description: >-
   Catalog of films and TV series
