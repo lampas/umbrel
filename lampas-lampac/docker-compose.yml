@@ -4,17 +4,28 @@ services:
       APP_HOST: lampas-lampac_server_1
       APP_PORT: 9118
 
+  watchtower:
+    image: containrrr/watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /root/.docker/config.json:/config.json
+    command: --label-enable --interval 30
+
   server:
     image: immisterio/lampac:latest
     # user: "1000:1000"
     restart: "on-failure"
     stop_grace_period: "1m"
     init: true
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
     volumes:
       - ${APP_DATA_DIR}/data/config.json:/home/init.conf
       - ${APP_DATA_DIR}/data/passwd:/home/passwd
       - ${APP_DATA_DIR}/data/personal.json:/home/wwwroot/lampa-main/personal.lampa:ro
       - ${APP_DATA_DIR}/data/entrypoint.sh:/umbrel-entrypoint.sh:ro
+      - ${UMBREL_ROOT}/data/storage/downloads/movies:/home/dlna/movies
+      - ${UMBREL_ROOT}/data/storage/downloads/shows:/home/dlna/shows
     entrypoint: /umbrel-entrypoint.sh
     environment:
         # App config

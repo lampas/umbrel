@@ -1,3 +1,6 @@
 {
-    
+    "dlna": {
+        "enable": true,
+        "downloadSpeed": 50000000
+    }
 }

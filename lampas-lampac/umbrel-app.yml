@@ -4,7 +4,7 @@ name: Lampac
 tagline: A pre-configured version of Lampa (catalog of films and series)
 icon: https://github.com/lampas/umbrel/blob/main/lampas-lampac/assets/icon.svg?raw=true
 category: Media
-version: "0.0.4"
+version: "0.1.0"
 port: 9118
 description: >-
   Catalog of films and TV series
@@ -20,7 +20,7 @@ gallery:
   - https://github.com/lampas/umbrel/blob/main/lampas-lampac/assets/screenshot-3.png?raw=true
   - https://github.com/lampas/umbrel/blob/main/lampas-lampac/assets/screenshot-4.png?raw=true
 releaseNotes: >-
-  First release
+  Added DLNA
 dependencies: []
 path: ""
 defaultUsername: ""
