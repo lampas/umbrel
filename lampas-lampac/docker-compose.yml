@@ -3,6 +3,8 @@ services:
     environment:
       APP_HOST: lampas-lampac_server_1
       APP_PORT: 9118
+      PROXY_AUTH_WHITELIST: "*"
+      PROXY_AUTH_BLACKLIST: "/admin/*"
 
   watchtower:
     image: containrrr/watchtower
